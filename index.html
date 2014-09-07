@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <title>AWS-DAV Client</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="asset/css/app.min.css" type="text/css">
+    </head>
+    <body>
+        <div class="headerbar">
+            <ul class="breadcrumb">
+            </ul>
+            <a href="javascript:void(0)" class="config"></a>
+        </div>
+        <nav class="buckets">
+            <ul class="nav nav-pills nav-stacked">
+            </ul>
+        </nav>
+        <div class="files">
+            <section id="bucketObjects"></section>
+        </div>
+        <div id="layer"><p></p></div>
+        <div id="setting">
+            <form class="form-horizontal">
+                <fieldset>
+                    <legend>AWS Key Setting</legend>
+                    <div class="form-group">
+                        <label for="inputAccessKey" class="col-lg-2 control-label">accessKeyId:</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="inputAccessKey" placeholder="Input your access key ID">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSecretAccessKey" class="col-lg-2 control-label">SecretAccessKey:</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="inputSecretAccessKey" placeholder="Input your secret access key">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <span id="settingError">hogehoge</span>
+                            <button class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div id="fileDetail"></div>
+        <input type="file" id="downloadFile" nwsaveas />
+
+        <script src="asset/js/app.min.js"></script>
+    </body>
+</html>

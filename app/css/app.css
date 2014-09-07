@@ -1,0 +1,289 @@
+.headerbar {
+    position: relative;
+}
+.headerbar .config {
+    position: absolute;
+    z-index: 99;
+    display: block;
+    top: 4px;
+    right: 6px;
+    width: 32px;
+    height: 32px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAB8UlEQVRYw+2WT0gUURzHn+u62fovDQqs6CZIB/W2QgjFtpcuXeuQtw6yUN5Cb3qMLh68+Ce0SEwQQjMxZDeKAgWhXAjDPFhdEsUSlwTh42FjmDe+nd6bnV0v870N8/19P/P+/d4IEShQyUSEMXYByDLHWf8BSewa9B8wIgGWCg8s4ypxwtbzuARYsTljJIiYxlfxOveludkmxKoE+E1UCCE4xRQAGS6axFfz1orKkKCVYZyaoYUYaet5nUu68eWk8KJ1avQAcbwqqQe44RnwoLhT9I0z+ou8pAj4wxSPecQzthRvf3LZZB+1O8p3uM9p622Yu2w6HJ1m56BZKt6g6ZjjnGOUt0ziK3huK93jitJ1nh8213tq/x8c5SGzvHEMvzev/7bk22KRefpdQEwoFu+AOpd+9V1RMZkfkFXYU65jHlZUbOe3qzTqCuhRVOyfIMB8iobMpsifRZ5w36aTTHvcpr94yQv6NJq2p4OWprq4reKmWS8yb3Z3zO5k83a9Wfw7+avunez9yuzSA1zzDLinBwix6Cl+jSrdVajhnVX2mThtPDkW94oY7TbfGhfM9tECAB+p/zeqL1L8bu5rqWQagE80CjNRRgfXKc/Tp5alM5OgQhQqx9/1B+G36JYAA/4DIjzlLwCHzNEgAgUqmY4A8wWS13RNzywAAAAASUVORK5CYII=);
+    background-size: 32px 32px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.breadcrumb:before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAABnUlEQVRIx2NgIBF0Gyg5APF+IP5/P8gZhPcDsQMDrQCyhTAMtZi2DkC2EIfFYDxqMSFDBYC4AWpYA7a4ItdiaNpogMqDaAFkyfd4Ekw/qRYD5frxJMT3WH2DzbCtjsZguQYd+f+1WnL/yzVk/5eoy/yfZ6H7f5Wt4f8N9sb/97taoKjF50iiLV5vb/i/GGhRtrLU/xRFif9x8uIoOE9V9n+fkQZQnfH/pda61LP4vI8d2EfzLXX/N+mq/C/TlIdbmgl0TL6q9P9SYCiAQqRVT5F6FuPC2CzAhSmy+JSXNRjD4hEWpwsstcCY6hYTk2BIUTtq8ajFI9jiAcvHA1ZyPYwL+P8kM/b/i8ay/696mv+/mzft/8f1K8H43vQJ/0/Xl/3fV5D2f2mAy/8ZDlQM6kOBzv83JoSCLXgyfwbcUhh+v3gO2EHPSjP/b/e1p37iAvlodYTP/60pkWAfgkLgeUXu/6f5yf+fZMWSlbjwtUAayGiBNBDbAgG1uQqgCgqA2ICKbS4DkNlQ+QKUNtdou3qwWTwwfacB6y1SGwAAuBeBfnhpQaEAAAAASUVORK5CYII=);
+    width: 100px;
+    height: 32px;
+    background-size: 30px 32px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    content: "AWS S3";
+    top: 3px;
+    left: 6px;
+    color: #fff;
+    padding-left: 38px;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+.breadcrumb {
+    background-color: #2c3e50;
+    border-radius: 0;
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    box-shadow: 1px 1px 5px #2c3e50;
+    min-height: 39px;
+}
+.breadcrumb a {
+    color: #fff;
+    padding: 3px 6px;
+}
+.breadcrumb li.active a {
+    color: #0ff;
+    cursor: default;
+}
+.breadcrumb li.active a:hover {
+    text-decoration: none;
+}
+.breadcrumb li:first-child {
+    margin-left: 156px;
+}
+
+
+.buckets {
+    width: 160px;
+    background: #ecf0f1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin: 0;
+}
+.buckets ul {
+    padding: 40px 0 0 0;
+}
+.buckets li a {
+    background-color: #3be6c4;
+    color: #fff;
+    border-radius: 0;
+}
+.buckets li + li {
+    margin-top: 0;
+}
+.buckets li a:hover,
+.buckets li.active a {
+    background-color: #0f7864;
+}
+
+
+.files {
+    margin: 0 0 0 170px;
+    height: 100%;
+    padding-top: 46px;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+.files section > div {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    margin: 0 4px 4px 4px;
+    border: solid 1px #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.files section > div:hover {
+    border: solid 1px #333;
+}
+.files section > div p {
+    text-align: center;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 1.8;
+}
+
+.icon-file,
+.icon-image,
+.icon-directory {
+    background-size: 64px 64px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+}
+.icon-file {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAAp0lEQVR4Ae3SsQpCMQyF4b+38YV08XHVRRF8tYK7EGen3IChcj1/58LHIajVKaV85Rvs5wKcJ8cqQNyOR7BCMQA6l5oVIoDjCUIpADpnYkL+8BJA444zOMwCQOcUrJCcPQsA4xavUAkA44oz5gHAon8Ltb0IMr6Z81kjbGFOBQs0gn50AQEEEEAAAQQQQAABBBBAACOT//UCLblU0xFu5gZ84wsopdQbdtN6dZRxvKEAAAAASUVORK5CYII=);
+}
+.icon-image {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAB6UlEQVR4Ae2YPWgUQRxH3565vQumCqKovZUEQSwEwTIStbazEPzoQhDsLLQV0co2mlqwtLFRIl4MfkW0i9iIiuBHPOPGaH5a7C3LMHq3HzMcMu+VW9yD+c9/2SMQCARyTHGfLnJsl3kOYeEw8qglYQF59AEpET2+08YfCaMYKPUSm3HFGJdRKtgDaOOScTOggUmCSxIMGnjGT0DMGRb5+MeHnKZJBuKvKLU6O3mMcj5iBz1GUaqzgDbPkOETWv4CZpDF6SzPecAistjxF2B/na2YAf/xNXyJjRcAgNwH3MDGHAbuZqBlvYZx9rTiEDa5yifecI6oxCKqHBBxE6Ve67uKExJzFRNXCziPcl6kENUDjrGB8nKWojTLB+xjFRlucMJXwBZeIYtrTPoIiLmL7NJlP3lO8Y4PHK83YA79wy/szUJns8M5iY2RMgHTqI9vmQC2cRtl/uBoPQGT/ER9XWMJc0hXOVg9YIKvqLTfOADk2VQsYCuvUSU/s6d8QIt5VNn37CobMItqcZnt9GgMHjCDavM540UDjvAL1WiHsSIBu1lBNXuHFhD1D0j3vgNvMTJIQMw95MjrgxzBFeTQC2ZAlAvwSzR0HyYhIAQk+CQBM2AJnzwdwj+rYYoF1pFj1+nkfz4QCAR+A2LoWHLd8MBUAAAAAElFTkSuQmCC);
+}
+.icon-directory {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAA6ElEQVR4Ae3SQS7HQBiG8QcRiRBs9AgSSwtHcA2nsHINayvXcAIRcQUpm/7bqUWVNPHZt/2bWfTLJLy/9wJPZj5kDRERuaDE1mzgkTOc3WG/bsUJrh6wyF59E16w6CouKXDSY4uu455tkh1gDjtnxiZzCjwU6QHHeNjPHbCX/wUkyRUlA+awgZJrRjYYazjCT89u7Ah38GQQCwh4CvGA5m8HtPGAWl+QOyDoBhSQ+wb0BR2fuQL83+CLj7wB75A3ICggLaDGS5sWEP79F1R4WaUFPPONjycmtpgKNJxyyLLeuOGWCRERkR98Hv5h3cCgMgAAAABJRU5ErkJggg==);
+}
+
+
+#layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+#layer p {
+    position: absolute;
+    width: 600px;
+    height: 30px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    margin: 35px 0 0 -300px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#layer.loading:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -60px 0 0 -40px;
+    border: solid 8px #3be6c4;
+    border-radius: 50%;
+    border-right-color: transparent;
+    -webkit-animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0%   { -webkit-transform: rotate(0deg);   opacity: 0.2; }
+    50%  { -webkit-transform: rotate(180deg); opacity: 1.0; }
+    100% { -webkit-transform: rotate(360deg); opacity: 0.2; }
+}
+
+#setting {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 380px;
+    height: 290px;
+    border: solid 4px #333;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 10px;
+    margin: -155px 0 0 -200px;
+    display: none;
+    z-index: 101;
+}
+#setting legend {
+    margin-bottom: 10px;
+}
+
+#setting .form-group:last-child {
+    text-align: right;
+}
+#settingError {
+    margin-right: 10px;
+    color: #c00;
+}
+
+#fileDetail {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-transition: height 0.3s ease-out;
+    text-align: right;
+
+}
+#fileDetail.active {
+    height: 120px;
+}
+#fileDetail p {
+    padding: 4px 10px;
+    margin: 0;
+    color: #fff;
+}
+#fileDetail button {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#downloadFile {
+    display: none;
+}
+
+#modal {
+    position: absolute;
+    width: 300px;
+    height: 170px;
+    background: rgba(255, 255, 255, 0.9);
+    top: 50%;
+    left: 50%;
+    z-index: 101;
+    display: block;
+    margin: -85px 0 0 -150px;
+    box-shadow: 3px 3px 5px #000;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#modal .message {
+    padding: 30px 0 20px 0;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    height: 80px;
+    overflow: hidden;
+    line-height: 1.6;
+    color: #333;
+}
+
+#modal .buttons {
+    text-align: center;
+    padding: 20px;
+}
+
+#modal button {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+#modal button:first-child {
+    padding: 8px 26px;
+}
+
+#modal.notify {
+    -webkit-transform-origin: center center;
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 0.25s;
+    -webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes blink {
+    0%{
+        -webkit-transform: scale(1, 1) translateZ(0);
+    }
+    50%{
+        -webkit-transform: scale(1.1, 1.1) translateZ(0);
+    }
+    100%{
+        -webkit-transform: scale(1, 1) translateZ(0);
+    }
+}

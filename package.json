@@ -1,0 +1,26 @@
+{
+  "name": "aws",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "aws-sdk": "~2.0.0-rc8",
+    "when": "~2.7.1",
+    "grunt-node-webkit-builder": "git://github.com/ysugimoto/grunt-node-webkit-builder.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.3.1",
+    "grunt-contrib-cssmin": "~0.7.0"
+  },
+  "window": {
+    "width": 800,
+    "height": 600
+  }
+}
